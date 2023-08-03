@@ -1,0 +1,27 @@
+
+/* Control elements (input, select, textarea etc) */
+
+button,
+input,
+textarea {
+  font-family: Tahoma, sans-serif;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.2em 0.4em;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 0.2em 0.3em;
+}
+
+.btn-icon {
+  padding: 2px;
+  font-size: 0.8rem;
+
+  &--delete::before {
+    content: '❌';
+  }
+}

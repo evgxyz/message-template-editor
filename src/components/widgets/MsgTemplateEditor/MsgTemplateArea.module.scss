@@ -1,0 +1,66 @@
+
+@import '@/styles/abstract';
+
+/* .body { 
+  //@include debug-border(violet);
+}
+
+.text-node {
+  
+} */
+
+.if-node {
+  margin: 10px 0;
+
+  & .if-sect {
+    display: flex;
+    column-gap: 10px;
+    padding-left: 10px;
+    border-left: 10px solid;
+
+    &__left {
+      width: 4em;
+      display: flex;
+      //@include debug-border(red)
+    }
+
+    &__body {
+      flex-grow: 1;
+    }
+
+    &__title {
+      font-weight: bold;
+      color: darkblue;
+    }
+
+    &__menu {
+      margin-left: 10px;
+    }
+
+    &--cond {
+      border-left-color: orange;
+
+      & .textarea {
+        background-color: lightgoldenrodyellow;
+      }
+    }
+
+    &--then {
+      margin-top: 10px;
+      border-left-color: #77dd77;
+    }
+
+    &--else {
+      margin-top: 10px;
+      border-left-color: #ff6961;
+    }
+  }
+}
+
+.textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  resize: vertical;
+  padding: 5px;
+}
