@@ -30,13 +30,19 @@ export function MainPage(): JSX.Element {
   return (
     <div className={css['body']}>
       <h1 className={css['title']}>
-        Message Template Editor demo-page
+        Template Editor demo-page
       </h1>
 
       <div className={css['content']}>
+        <div className={css['about-box']}>
+          <a href={process.env.PUBLIC_URL+'/template-editor.pdf'} target="_blank">
+            (About app)
+          </a>
+        </div>
+
         <div className={css['btn-box']}>
           <button onClick={editorOpenOnClick}>
-            Open Message Template Editor
+            Open Template Editor
           </button>
        
           <button onClick={resetToDefaultOnClick}>
