@@ -80,8 +80,6 @@ const getArrVarNamesFromStorage = function() {
 
 const getTemplateFromStorage = function() {
   return (
-    localStorage.template 
-    ? JSON.parse(localStorage.template) 
-    : mockMsgTemplateJSON
+    JSON.parse(localStorage.template ?? mockMsgTemplateJSON) ?? null
   );
 }
