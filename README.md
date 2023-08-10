@@ -1,6 +1,8 @@
 
 Техническое задание:
+<a href="https://evgxyz.github.io/message-template-editor/tz.pdf" target="_blank">
 https://evgxyz.github.io/message-template-editor/tz.pdf
+</a>
 
 Шаблон сообщения представляет из себя массив, содержащий узлы двух типов: текстовый или IF-блок. В свою очередь IF-блок содержит condition, then, else -ветки, которые также являются шаблонами, т.е. массивами, которые могут содержать узлы двух типов. Например:
 
